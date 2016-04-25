@@ -1,9 +1,10 @@
+
  var a= [];
-   function det(){
-       for(var i=1;i<=2;i++){
-            a[i]=[];
-            for (var j=1; j<=2; j++){
-                a[i][j] =parseInt(prompt('Ingrese numero en la fila'+i+'columna'+j+':'));
+function det(){
+    for(var i=1;i<=2;i++){
+        a[i]=[];
+        for (var j=1; j<=2; j++){
+            a[i][j] =parseInt(prompt('Ingrese numero en la fila'+i+'columna'+j+':'));
 
             }
         }
