@@ -1,4 +1,3 @@
-
 console.log("SERIE DE FIBONACCI\n");
 num=Number(prompt("Introduce la cantidad de numeros: "));
 for(var i=0;i<=num-1;i++)
