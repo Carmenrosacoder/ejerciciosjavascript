@@ -1,5 +1,5 @@
 var cont=0;
-n=parseInt(prompt('Ingresar numero:'));
+var n=parseInt(prompt('Ingresar numero:'));
 function digitos(n){
     do{
      n=n/10;
