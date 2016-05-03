@@ -7,6 +7,9 @@ function triangulos(){
 }
 else if(a===b || b===c || a===c){
     console.log('Es un triangulo isosceles');
+    if(a*a===b*b+c*c || b*b===a*a+c*c || c*c===a*a+b*b){
+        console.log('Es un triangulo rectangulo');
+    }
 }
 else if(a!=b && b!=c && a!=c){
     console.log('Es un triangulo escaleno');
