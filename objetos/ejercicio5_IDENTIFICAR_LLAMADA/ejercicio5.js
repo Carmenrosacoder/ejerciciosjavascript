@@ -1,0 +1,18 @@
+/*Un teléfono celular cuenta con una funcionalidad de identificación de llamadas permitiendo no solo ver qué número nos intenta contactar sino también conocer qué contacto dado de alta en nuestro dispositivo, nos llama.
+
+Realizar un programa que imite esta funcionalidad, principalmente que el usuario al ingresar el número de teléfono, el programa reconozca a quien pertenece el mismo*/
+var n=parseInt(prompt('Cuantos contactos guardara?'));
+var contactos = []
+for (var i = 0; i <n; i++) {
+    var persona ={}
+    persona.numero=parseInt(prompt('Ingrese numero de telefono:'));
+    persona.nombre=prompt('Ingrese el nombre del contacto');
+    contactos.push(persona);
+}
+var longitud=contactos.length;
+for(j=0;j<longitud;j++){
+var telefono=parseInt(prompt('Ingrese numero de telefono:'));
+if(telefono===contactos[j].persona.numero){
+    alert(contactos[j].persona.nombre);
+}
+}

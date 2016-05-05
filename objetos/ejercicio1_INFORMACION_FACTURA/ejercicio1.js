@@ -7,16 +7,21 @@ Una vez definidas las propiedades del objeto, añadir un método que calcule el 
 function factura(precio,cantidad){
     this.precio = precio;
     this.cantidad = cantidad;
+    this.importe = 0;
     this.importeTotal= function(){
-        return this.precio*this.cantidad;
+        this.importe = this.precio*this.cantidad;
     };
+    this.pantalla = function(){ alert('El importe total:'+this.precio*this.cantidad)};
 }
-var factura = new factura(20,100);
-alert(factura.importeTotal());
+var precio=parseFloat(prompt('Ingrese precio:'));
+var cantidad=parseFloat(prompt('Ingrese cantidad:'))
+var factura = new factura(precio,cantidad);
+factura.importeTotal();
+factura.pantalla();
+
+
 /*function total(precio,cantidad){
     this.precio = precio;
-
-
 }
 functio
 var Car = function(wheels,seats,engines) {
