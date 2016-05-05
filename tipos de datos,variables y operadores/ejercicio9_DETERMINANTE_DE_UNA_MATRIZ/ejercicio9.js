@@ -11,3 +11,4 @@
    }det();
 console.log('Matriz:\n'+a[1][1]+'\t'+a[1][2]+'\n'+a[2][1]+'\t'+a[2][2]);
 console.log('determinante:'+determ);
+document.write('Matriz:'+'<br>'+a[1][1]+'\t'+'\t'+'\t'+a[1][2]+'<br>'+a[2][1]+'<td>'+a[2][2])

@@ -12,7 +12,7 @@ for (var i = 0; i <n; i++) {
 var longitud=contactos.length;
 for(j=0;j<longitud;j++){
 var telefono=parseInt(prompt('Ingrese numero de telefono:'));
-if(telefono===contactos[j].persona.numero){
-    alert(contactos[j].persona.nombre);
+if(telefono===contactos[j].numero){
+    alert(contactos[j].nombre)
 }
 }
