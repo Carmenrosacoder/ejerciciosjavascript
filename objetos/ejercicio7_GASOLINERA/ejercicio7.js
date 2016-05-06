@@ -14,7 +14,7 @@ else{
     }
 }
 alert('Dispensador con '+gasolinera.litros+' litros\n Precio:'+gasolinera.precio+'soles');
-while(this.litrosRetira<=this.litros){
+do{
 gasolinera.litrosRetira=parseInt(prompt('¿Cuantos litros retirará?: '));
 alert('Debe pagar'+gasolinera.precio*gasolinera.litrosRetira+'soles\n'+'Solo quedan'+gasolinera.dispensa()+'litros');
-};
+}while(gasolinera.litrosRetira<=gasolinera.litros);
