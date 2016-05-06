@@ -10,6 +10,7 @@ for (var i = 0; i <n; i++) {
     contactos.push(persona);
 }
 var longitud=contactos.length;
+
 var telefono=parseInt(prompt('Ingrese un numero de telefono:'));
 for(j=0;j<longitud;j++){
 if(telefono===contactos[j].numero){

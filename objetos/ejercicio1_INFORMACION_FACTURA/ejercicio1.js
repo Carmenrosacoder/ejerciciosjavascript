@@ -3,7 +3,7 @@
 (cada uno de los cuales dispone de descripción, precio, cantidad) y otra información básica de la factura (importe total, tipo de iva,
  forma de pago).
 Una vez definidas las propiedades del objeto, añadir un método que calcule el importe total de la factura y actualice el valor de la propiedad correspondiente. Por último, añadir otro método que muestre por pantalla el importe total de la factura.*/
-
+/*
 function factura(precio,cantidad){
     this.precio = precio;
     this.cantidad = cantidad;
@@ -18,8 +18,27 @@ var cantidad=parseFloat(prompt('Ingrese cantidad:'))
 var factura = new factura(precio,cantidad);
 factura.importeTotal();
 factura.pantalla();
+*/
+var factura ={
+    nombreEmpresa:"Laboratoria",
+    direccion:"Av-Pardo",
+    telefono:555555,
+    nif:"hh",
+    informacionfactura: function(nombreEmpresa,direccion,telefono,nif){
+        return ('Nombre de la Empresa:'+this.nombreEmpresa+'\n'+'Dirección:'+this.direccion+'\n'+'Telefono:'+this.telefono+'\n'+'NIF:'+this.nif)
+    },
+}
+var producto= {
+    descripcion:"Laptops Toshiba",
+    precio:3500,
+    cantidad:10,
+    infoProducto: function(descripcion,cantidad,precio){return this.descripcion+'\n Cantidad:'+this.cantidad+'\n Precio:'+this.precio},
+    importeTotal: function(cantidad,precio){return this.cantidad*this.precio},
+    tipoIva:"asas",
+    formaPago:"tarjeta",
 
-
+}
+alert('Informacion de la factura: \n'+factura.informacionfactura()+'\n Producto:\n Descripcion:'+producto.infoProducto()+'Importe Total:'+producto.importeTotal());
 /*function total(precio,cantidad){
     this.precio = precio;
 }
